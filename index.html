@@ -12,9 +12,23 @@
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/bbfc4be646.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily : {
+            roboto : ["Roboto", 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
-<body>
+<body class="font-roboto">
   <header class="bg-[##FFFBF0]">
     <nav class="flex justify-between items-center p-4 md:px-24 md:py-6">
       <img class="w-72" src="./icons/logo.png" alt="">
